@@ -15,10 +15,12 @@ public class Main {
 
         Dispatcher dispatcher1 = new Dispatcher_LazyProcessors(deepCopy(ArrayProcessors));
         Dispatcher dispatcher2 = new Dispatcher_WorkaholicProcessors(deepCopy(ArrayProcessors));
+        Dispatcher dispatcher3 = new Dispatcher_SamaritanProcessors(deepCopy(ArrayProcessors));
 
 
         dispatcher1.processTasks();
         dispatcher2.processTasks();
+        dispatcher3.processTasks();
     }
 
     public static Processor[] deepCopy(Processor[] original) {
